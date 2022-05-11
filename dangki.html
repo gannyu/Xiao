@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>  
+   
+    <header>
+        <img src="img//5456680.webp">
+    </header>
+    <nav>
+        <div class="mncon">
+            <ul>
+                <li><a href="ảnh.html">Thư viện ảnh &emsp; &emsp; </a></li>
+                <li><a href="dangki.html">đăng kí &emsp; &emsp;</a></li>
+                <li><a href="banhang.html">Bán hàng &emsp; &emsp;</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <article id="dangki">
+        
+        <div class="khung">
+            <div class="text">
+                <h1>ĐĂng kí thành viên</h1>
+                <br>
+            </div>
+            <div id="noidung">
+                <form id="form" action="" method="post" onsubmit="return validateForm()">
+
+                    <div class="A">
+                        <legend>Mã sinh viên</legend>
+                        <input type="text" class="dk" id="masv" placeholder="PH26827">
+                        <br>
+                        <span id="thongbao"></span>
+
+                    </div>
+                    <div class="A">
+                        <legend>Họ tên</legend>
+                        <input type="text" class="dk" id="hoten" placeholder="Nguyễn Công Sơn">
+                        <br>
+                        <span id="thongba"></span>
+                    </div>
+                    <div class="A">
+                        <legend>Email</legend>
+                        <input type="text" class="dk" id="email" placeholder="sonncph@fpt.edu.vn">
+                        <br>
+                        <span id="thongb"></span>
+                    </div>
+                
+                <div class="A" id="xl">
+                    <legend>Giới Tính</legend>
+                    <div class="s">
+                        <input type="radio" name="gender" class="x" id="sex">NAM
+                        <input type="radio" name="gender" class="x" id="sex">Nữ
+                        <br>
+                        <span id="thong"></span>
+
+                    </div>
+                </div>
+                <div class="A">
+                    <legend>Sở thích</legend>
+                    <div class="sothich">
+                        <input type="checkbox" name="checkbox" class="i" id="hobby">
+                        <label>Đọc sách</label>
+                        <input type="checkbox" name="checkbox" class="i" id="hobby">
+                        <label>Du lịch</label>
+                        <input type="checkbox" name="checkbox" class="i" id="hobby">
+                        <label>Âm nhạc</label>
+                        <input type="checkbox" name="checkbox" class="i" id="hobby">
+                        <label>Ẩm thực</label>
+                        <input type="checkbox" name="checkbox" class="i" id="hobby">
+                        <label>Khác</label>
+                    </div>
+                </div>
+                <div class="A">
+                    <legend>Quốc tịch</legend>
+                    <select name="select" class="quoctich" id="qt">
+                        <option value="0"> chọn quốc tích</option>
+                        <option value="1"> ANH</option>
+                        <option value="2"> Hàn QUốc</option>
+                        <option value="3"> Việt Nam</option>
+                        <option value="4"> NHật bản</option>
+                        <br>
+                        <span id="thon"></span>
+
+                    </select>
+                </div>
+                <div class="A">
+                    <legend>Ghi chú</legend>
+                    <textarea type="textarea" class="dk" id="ND"></textarea>
+                    <span id="tho"></span>
+
+                    <br>
+                </div>
+                <div class="A">
+                    <button class="nut" onclick="nut()">đăng kí</button>
+                </div>
+            </div>
+        </div>
+    </form>
+        <script src="dangki.js"></script>
+           
+        
+        
+        
+    </article>
+    <aside>
+        
+    </aside>
+    
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <img src="img//5456680.webp">
+    </header>
+    <nav>
+        <div class="mncon">
+        <ul>
+            <li><a href="ảnh.html">Thư viện ảnh &emsp;  &emsp;</a></li>
+            <li><a href="dangki.html">đăng kí &emsp;  &emsp;</a></li>
+            <li><a href="banhang.html">Bán hàng &emsp;  &emsp;</a></li>
+        </ul>
+        </div>
+    </nav>
+    <article class="banhang">
+        <div class="caocao">
+            <h1>BÁN Hàng</h1>
+        </div>
+        <div class="giahang">
+            <select name="price" class="Z" onchange="doimucgia()" id="mucgia">
+                <option value="0"> CHọn mức giá</option>
+                <option value="1"> Dưới 100</option>
+                <option value="100"> Từ 100 -250</option>
+                <option value="250"> từ 250-500</option>
+                <option value="500"> Từu 500-></option>
+            </select>
+        </div>
+        <table class="C">
+            <thead>
+                <tr>
+                    <td class=""></td>
+                    <th class="B">Hàng hoá</th>
+                    <th class="B">Đơn giá</th>
+                    <th class="B">Số lượng</th>
+                    <th class="B">Thanhf tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input onclick="tich(0)" type="checkbox" class="G"></td>
+                    <td>Iphone</td>
+                    <td name="gia">700</td>
+                    <td><input onkeyup="thanhtien(this)" name="soluong" type="number" value="0" min="0" step="1" id="so"></td>
+                    <td><input name="thanhtien" type="number" disabled="disabled" class="check"  ></td>
+                  
+
+                </tr>
+                <tr>
+                    <td><input onclick="tich(1)" type="checkbox" class="G"></td>
+                    <td>SAMSUNG</td>
+                    <td name="gia">400</td>
+                    <td><input onkeyup="thanhtien(this)" name="soluong" type="number" value="0" min="0" step="1" id="so"></td>
+                    <td><input name="thanhtien" type="number" disabled="disabled" class="check" ></td>
+                </tr>
+                <tr>
+                    <td><input onclick="tich(2)" type="checkbox" class="G"></td>
+                    <td>NOKIA</td>
+                    <td name="gia">100</td>
+                    <td><input onkeyup="thanhtien(this)" name="soluong" type="number" value="0" min="0" step="1" id="so"></td>
+                    <td><input name="thanhtien" type="number" disabled="disabled" class="check" ></td>
+
+                </tr>
+                <tr>
+                    <td><input onclick="tich(3)" type="checkbox" class="G"></td>
+                    <td>SONY Speria</td>
+                    <td name="gia">450</td>
+                    <td><input onkeyup="thanhtien(this)" name="soluong" type="number" value="0" min="0" step="1" id="so"></td>
+                    <td><input name="thanhtien" type="number" disabled="disabled" class="check" ></td>
+                    
+
+                </tr>
+                <tr>
+                    <td><input onclick="tich(4)" type="checkbox" class="G"></td>
+                    <td>Motorola</td>
+                    <td name="gia">180</td>
+                    <td><input onkeyup="thanhtien(this)" name="soluong" type="number" value="0" min="0" step="1" id="so"></td>
+                    <td><input name="thanhtien" type="number" disabled="disabled" class="check" ></td>
+                    
+
+                </tr>
+                <tr>
+                    <td><input onclick="tich(5)" type="checkbox" class="G"></td>
+                    <td>Oppo</td>
+                    <td name="gia">600</td>
+                    <td><input onkeyup="thanhtien(this)"  name="soluong" type="number" value="0" min="0" step="1" id="so"></td>
+                    <td><input name="thanhtien" type="number" disabled="disabled" class="check" ></td>
+                   
+
+                </tr>
+                <tr>
+                    <td><input onclick="tich(6)" type="checkbox" class="G"></td>
+                    <td>Bphone</td>
+                    <td name="gia">90</td>
+                    <td><input onkeyup="thanhtien(this)" name="soluong" type="number" value="0" min="0" step="1" id="so"></td>
+                    <td><input name="thanhtien" type="number" disabled="disabled" class="check" ></td>
+                    
+
+                </tr>
+
+            </tbody>
+            <tfoot>
+            <tr>
+                <th colspan="4" class="G">Tổng</th>
+                <td class="check" id="sum"> </td>
+               
+            </tr>
+        </tfoot>
+        </table>
+    </article>
+</body>
+</html>
+<script src="banhang.js"></script>
